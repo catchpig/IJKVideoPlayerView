@@ -1,0 +1,51 @@
+pluginManagement {
+    repositories {
+//        mavenCentral() {
+//            allowInsecureProtocol = true
+//        }
+//        google() {
+//            allowInsecureProtocol = true
+//        }
+//        gradlePluginPortal()
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        maven {
+            url "https://maven.aliyun.com/repository/central"
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+//        jcenter()
+//        mavenCentral() {
+//            allowInsecureProtocol = true
+//        }
+//        google() {
+//            allowInsecureProtocol = true
+//        }
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        maven {
+            url "https://maven.aliyun.com/repository/central"
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
+        }
+    }
+}
+rootProject.name = "IJKVideoPlayerView"
+include ':app'
+include ':dkplayer-java'
+include ':ijk'

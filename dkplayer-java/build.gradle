@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'xyz.doikki.videoplayer'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly "androidx.annotation:annotation:1.1.0"
+}
+
+ext {
+    PUBLISH_ARTIFACT_ID = 'dkplayer-java'
+}
